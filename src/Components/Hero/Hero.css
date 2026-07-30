@@ -20,11 +20,9 @@
 .hero-content {
   max-width: 1200px;
   width: 100%;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   gap: 60px;
 }
 
@@ -71,7 +69,6 @@
 
   animation: fadeInUp 1.2s ease;
 }
-
 .btn {
   padding: 14px 28px;
   border-radius: 8px;
@@ -79,27 +76,27 @@
   font-weight: 600;
   transition: .3s;
 }
-
 .btn-primary {
   background: #F18F01;
   color: white;
+  border: #F18F01;
 }
-
 .btn-primary:hover {
   background: transparent;
   border: 2px solid #F18F01;
   color: #F18F01;
 }
-
 .btn-secondary {
-  border: 2px solid white;
+  background: #F18F01;
   color: white;
+  border: #F18F01;
+}
+.btn-secondary:hover {
+  background: transparent;
+  border: 2px solid #F18F01;
+  color: #F18F01;
 }
 
-.btn-secondary:hover {
-  background: white;
-  color: #1B4F72;
-}
 
 /* ==========================
    PROFILE IMAGE

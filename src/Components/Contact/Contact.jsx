@@ -125,7 +125,7 @@ function Contact() {
         </div>
 
         <button
-          className="btn btn-primary"
+          className="button"
           disabled={loading}
         >
           {buttonText}

@@ -122,19 +122,25 @@ header{
     background-color: var(--accent);
     color: var(--white);
 }
-.btn:hover{
-    background-color: transparent;
-    color: var(--accent);
-    border-color: var(--accent);
+ .btn-primary{
+    background:var(--accent);
+    color:var(--white);
 }
-.btn-primary{
-    background-color: var(--accent);
-    color: var(--white);
-}
+
 .btn-primary:hover{
-    background-color: transparent;
-    color: var(--accent);
-    border-color: var(--accent);
+    background:transparent;
+    border-color:var(--accent);
+    color:var(--accent);
+}
+ .btn-secondary{
+    background:var(--accent);
+    color:var(--white);
+}
+
+.btn-secondary:hover{
+    background:transparent;
+    border-color:var(--accent);
+    color:var(--accent);
 }
 section{
     padding: 50px 5%;
@@ -234,6 +240,7 @@ section h2::after{
 }
 }
 
+
 body,
 .site-header,
 .hero-section,
@@ -325,27 +332,27 @@ body[data-theme="dark"] textarea::placeholder {
 }
  
 body[data-theme="dark"] label {
-    color: #ffffff;
+    color: var(--white);
 }
  
 body[data-theme="dark"] .btn-primary {
-    background: #F18F01;
-    color: #ffffff;
+    background: var(--accent);
+    color: var(--white);
 }
- 
+body[data-theme="dark"] .btn-primary:hover {
+    background: var(--white);
+    color: #121212;
+}
 body[data-theme="dark"] .btn-secondary {
-    background: #F18F01;
-    color: #ffffff;
+    background: var(--accent);
+    color: var(--white);
 }
  
 body[data-theme="dark"] .btn-secondary:hover {
-    background: #ffffff;
+    background: var(--white);
     color: #121212;
 }
-body[data-theme="dark"] .btn-primary:hover {
-    background: #ffffff;
-    color: #121212;
-}
+
  
 body[data-theme="dark"] .site-footer {
     background: #1a1a1a;

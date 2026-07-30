@@ -84,36 +84,6 @@ textarea {
   display: block;
 }
 
-/* ==========================
-   BUTTON
-========================== */
-
-.btn {
-  padding: 14px 28px;
-
-  border: none;
-
-  border-radius: 8px;
-
-  background: #F18F01;
-
-  color: white;
-
-  font-size: 1rem;
-
-  cursor: pointer;
-
-  transition: .3s;
-}
-
-.btn:hover:not(:disabled) {
-  background: #d97706;
-}
-
-.btn:disabled {
-  opacity: .7;
-  cursor: not-allowed;
-}
 
 /* ==========================
    RESPONSIVE
@@ -129,6 +99,30 @@ textarea {
     font-size: 2rem;
   }
 
+}
+/* ==========================
+   BUTTON
+========================== */
+
+.button {
+  /* display: inline-block; */
+  padding: 14px 28px;
+  height: 75px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: medium;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: .3s;
+}
+.button {
+  background: #F18F01;
+  color: white;
+}
+.button:hover {
+  background: transparent;
+  border: 2px solid #F18F01;
+  color: #F18F01;
 }
 
 /* ==========================
@@ -159,11 +153,3 @@ body[data-theme="dark"] textarea::placeholder {
   color: #bbb;
 }
 
-body[data-theme="dark"] .btn {
-  background: #F18F01;
-}
-
-body[data-theme="dark"] .btn:hover:not(:disabled) {
-  background: white;
-  color: #121212;
-}

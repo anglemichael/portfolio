@@ -116,34 +116,30 @@
 
 .btn {
   text-decoration: none;
-
   padding: 12px 20px;
-
   border-radius: 8px;
-
   transition: .3s;
-
   font-weight: 600;
 }
 
 .btn-primary {
-  background: #F18F01;
-  color: white;
+  border: 2px solid #F18F01;
+  color: #fff;
 }
-
 .btn-primary:hover {
-  background: #d97706;
+  background: white;
+  color: #F18F01;
 }
-
 .btn-secondary {
-  border: 2px solid #1B4F72;
-  color: #1B4F72;
+  border: 2px solid #F18F01;
+  color: #fff;
+}
+.btn-secondary:hover {
+  background: white;
+  color: #F18F01;
 }
 
-.btn-secondary:hover {
-  background: #1B4F72;
-  color: white;
-}
+
 
 /* ==========================
    RESPONSIVE
@@ -189,6 +185,15 @@ body[data-theme="dark"] .tag {
   background: #F18F01;
 }
 
+body[data-theme="dark"] .btn-primary {
+  border-color: white;
+  color: white;
+}
+
+body[data-theme="dark"] .btn-primary:hover {
+  background: white;
+  color: #111827;
+}
 body[data-theme="dark"] .btn-secondary {
   border-color: white;
   color: white;
