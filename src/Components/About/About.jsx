@@ -4,43 +4,52 @@ function About() {
   return (
     <section id="about" className="about-section">
 
-      <h2>About Me</h2>
+      <div className="about-header">
+        <h2>About Me</h2>
+        <p className="about-subtitle">
+          Get to know a little more about me.
+        </p>
+      </div>
 
-      <div className="about-container">
+      <div className="about-content">
 
-        <div className="about-image">
-          <img
-            src="/Profile2.jpg"
-            alt="Angel Biju"
-          />
-        </div>
+        <p className="about-intro">
+          Hello! I'm <span>Angel Biju</span>, an aspiring
+          <strong> Full-Stack Web Developer</strong> from Mysuru, India. I
+          enjoy building modern, responsive, and user-friendly web
+          applications while continuously improving my skills.
+        </p>
 
-        <div className="about-content">
+        <div className="about-cards">
 
-          <h3>Hello, I'm Angel Biju 👋</h3>
+          <div className="about-card">
+            <h3>💻 Web Development</h3>
 
-          <p>
-            I am an aspiring <strong>Full-Stack Web Developer</strong> based
-            in Mysuru, India. I enjoy building responsive and modern web
-            applications using HTML, CSS, JavaScript, React, and Node.js.
-          </p>
+            <p>
+              I build responsive websites using HTML, CSS, JavaScript,
+              React, and I'm currently learning Node.js to become a
+              full-stack developer.
+            </p>
+          </div>
 
-          <p>
-            Besides web development, I am also exploring
-            <strong> Cybersecurity</strong>. I enjoy solving problems,
-            learning new technologies, and creating projects that improve my
-            programming skills.
-          </p>
+          <div className="about-card">
+            <h3>🔐 Cybersecurity</h3>
 
-          <p>
-            My goal is to become a skilled software engineer who can build
-            secure, scalable, and user-friendly applications while constantly
-            learning and improving.
-          </p>
+            <p>
+              Besides web development, I'm also exploring cybersecurity
+              and learning how to create secure and reliable applications.
+            </p>
+          </div>
 
-          <a href="#contact" className="about-btn">
-            Let's Connect
-          </a>
+          <div className="about-card">
+            <h3>🚀 My Goal</h3>
+
+            <p>
+              My goal is to become a software engineer capable of building
+              scalable, secure, and impactful applications while constantly
+              learning new technologies.
+            </p>
+          </div>
 
         </div>
 
