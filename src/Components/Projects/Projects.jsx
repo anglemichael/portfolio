@@ -14,7 +14,7 @@ function Projects() {
     {
       id: 2,
       title: "Portfolio Website",
-      image: "/Profile.jpg",
+      image: "/portfolio.png",
       description:
         "A responsive personal portfolio built using React and Vite.",
       tech: ["React", "CSS", "JavaScript"],
@@ -24,7 +24,7 @@ function Projects() {
     {
       id: 3,
       title: "Calculator",
-      image: "/weather.png",
+      image: "/calculator.jpg",
       description:
         "A calculator built using HTML, CSS, and JavaScript.",
       tech: ["HTML", "CSS", "JavaScript"],
@@ -57,19 +57,19 @@ function Projects() {
 
               <div className="project-links">
                 <a
-                  href={project.live}
+                  // href={project.live}
                   className="btn btn-primary"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  // target="_blank"
+                  // rel="noopener noreferrer"
                 >
                   Live Demo
                 </a>
 
                 <a
-                  href={project.github}
+                  // href={project.github}
                   className="btn btn-secondary"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  // target="_blank"
+                  // rel="noopener noreferrer"
                 >
                   GitHub
                 </a>
