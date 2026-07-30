@@ -1,0 +1,176 @@
+/* ==========================
+   ABOUT SECTION
+========================== */
+
+.about-section {
+  padding: 90px 8%;
+  background: #ffffff;
+}
+
+.about-section h2 {
+  text-align: center;
+  font-size: 2.7rem;
+  color: #1B4F72;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.about-section h2::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: #F18F01;
+  display: block;
+  margin: 15px auto 0;
+  border-radius: 5px;
+}
+
+/* ==========================
+   LAYOUT
+========================== */
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+/* ==========================
+   IMAGE
+========================== */
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+
+  width: 350px;
+  height: 500px;
+
+  object-fit: cover;
+
+  border-radius: 20px;
+
+  border: 5px solid #1B4F72;
+
+  box-shadow: 0 15px 35px rgba(0,0,0,.2);
+
+  transition: .4s;
+}
+
+.about-image img:hover {
+  transform: translateY(-8px) scale(1.03);
+}
+
+/* ==========================
+   TEXT
+========================== */
+
+.about-content {
+  flex: 1.3;
+}
+
+.about-content h3 {
+  font-size: 2rem;
+  color: #1B4F72;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 1.08rem;
+  line-height: 1.9;
+  margin-bottom: 18px;
+  color: #444;
+}
+
+/* ==========================
+   BUTTON
+========================== */
+
+.about-btn {
+
+  display: inline-block;
+
+  margin-top: 15px;
+
+  padding: 14px 30px;
+
+  background: #F18F01;
+
+  color: white;
+
+  text-decoration: none;
+
+  border-radius: 8px;
+
+  transition: .3s;
+}
+
+.about-btn:hover {
+
+  background: #d97706;
+
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media (max-width: 900px) {
+
+  .about-container {
+
+    flex-direction: column;
+
+    text-align: center;
+
+  }
+
+  .about-image img {
+
+    width: 280px;
+    height: 380px;
+
+  }
+
+  .about-content h3 {
+
+    margin-top: 20px;
+
+  }
+
+}
+
+/* ==========================
+   DARK MODE
+========================== */
+
+body[data-theme="dark"] .about-section {
+  background: #121212;
+}
+
+body[data-theme="dark"] .about-content h3,
+body[data-theme="dark"] .about-section h2 {
+  color: white;
+}
+
+body[data-theme="dark"] .about-content p {
+  color: #d1d5db;
+}
+
+body[data-theme="dark"] .about-image img {
+  border-color: #F18F01;
+}
+
+body[data-theme="dark"] .about-btn {
+  background: #F18F01;
+}
+
+body[data-theme="dark"] .about-btn:hover {
+  background: white;
+  color: #111827;
+}

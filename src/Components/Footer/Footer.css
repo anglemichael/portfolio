@@ -1,0 +1,75 @@
+/* ==========================
+   FOOTER
+========================== */
+
+.site-footer {
+  background: #1B4F72;
+  color: rgba(255, 255, 255, 0.9);
+
+  text-align: center;
+
+  padding: 40px 5%;
+}
+
+.site-footer p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+/* ==========================
+   SOCIAL LINKS
+========================== */
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 25px;
+
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #F18F01;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media (max-width: 768px) {
+  .site-footer {
+    padding: 30px 20px;
+  }
+
+  .social-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+/* ==========================
+   DARK MODE
+========================== */
+
+body[data-theme="dark"] .site-footer {
+  background: #111827;
+  color: #d1d5db;
+}
+
+body[data-theme="dark"] .social-links a {
+  color: white;
+}
+
+body[data-theme="dark"] .social-links a:hover {
+  color: #F18F01;
+}

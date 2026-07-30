@@ -1,0 +1,169 @@
+/* ==========================
+   CONTACT SECTION
+========================== */
+
+.contact-section {
+  max-width: 700px;
+  margin: auto;
+  padding: 80px 5%;
+}
+
+.contact-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #1B4F72;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.contact-section h2::after {
+  content: "";
+  width: 70px;
+  height: 4px;
+  background: #F18F01;
+  display: block;
+  margin: 15px auto 0;
+  border-radius: 4px;
+}
+
+/* ==========================
+   FORM
+========================== */
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #1B4F72;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 16px;
+
+  border: 2px solid #d9d9d9;
+  border-radius: 8px;
+
+  font-size: 1rem;
+  font-family: inherit;
+
+  transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+
+  border-color: #1B4F72;
+
+  box-shadow: 0 0 0 3px rgba(27, 79, 114, 0.2);
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================
+   ERROR
+========================== */
+
+.error-msg {
+  color: crimson;
+  font-size: .9rem;
+  margin-top: 6px;
+  display: block;
+}
+
+/* ==========================
+   BUTTON
+========================== */
+
+.btn {
+  padding: 14px 28px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #F18F01;
+
+  color: white;
+
+  font-size: 1rem;
+
+  cursor: pointer;
+
+  transition: .3s;
+}
+
+.btn:hover:not(:disabled) {
+  background: #d97706;
+}
+
+.btn:disabled {
+  opacity: .7;
+  cursor: not-allowed;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media (max-width:768px) {
+
+  .contact-section {
+    padding: 60px 20px;
+  }
+
+  .contact-section h2 {
+    font-size: 2rem;
+  }
+
+}
+
+/* ==========================
+   DARK MODE
+========================== */
+
+body[data-theme="dark"] .contact-section {
+  background: #181818;
+}
+
+body[data-theme="dark"] .contact-section h2 {
+  color: white;
+}
+
+body[data-theme="dark"] label {
+  color: white;
+}
+
+body[data-theme="dark"] input,
+body[data-theme="dark"] textarea {
+  background: #2b2b2b;
+  color: white;
+  border-color: #555;
+}
+
+body[data-theme="dark"] input::placeholder,
+body[data-theme="dark"] textarea::placeholder {
+  color: #bbb;
+}
+
+body[data-theme="dark"] .btn {
+  background: #F18F01;
+}
+
+body[data-theme="dark"] .btn:hover:not(:disabled) {
+  background: white;
+  color: #121212;
+}

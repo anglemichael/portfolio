@@ -1,0 +1,241 @@
+/* ==========================
+   HERO SECTION
+========================== */
+
+.hero-section {
+  min-height: 90vh;
+  background: linear-gradient(135deg, #1B4F72, #2E86AB);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 80px 5%;
+}
+
+/* ==========================
+   HERO CONTENT
+========================== */
+
+.hero-content {
+  max-width: 1200px;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 60px;
+}
+
+/* ==========================
+   LEFT SIDE
+========================== */
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  color: white;
+  margin-bottom: 20px;
+
+  animation: fadeInUp .8s ease;
+}
+
+.highlight {
+  color: #F18F01;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: #f5f5f5;
+
+  line-height: 1.8;
+
+  margin-bottom: 40px;
+
+  max-width: 600px;
+
+  animation: fadeInUp 1s ease;
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+
+  animation: fadeInUp 1.2s ease;
+}
+
+.btn {
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: .3s;
+}
+
+.btn-primary {
+  background: #F18F01;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: transparent;
+  border: 2px solid #F18F01;
+  color: #F18F01;
+}
+
+.btn-secondary {
+  border: 2px solid white;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background: white;
+  color: #1B4F72;
+}
+
+/* ==========================
+   PROFILE IMAGE
+========================== */
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+
+  width: 350px;
+  height: 350px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  border: 8px solid #F18F01;
+
+  box-shadow: 0 15px 40px rgba(0,0,0,.35);
+
+  transition: .4s;
+}
+
+.hero-image img:hover {
+
+  transform: scale(1.05) rotate(2deg);
+
+}
+
+/* ==========================
+   ANIMATION
+========================== */
+
+@keyframes fadeInUp {
+
+  from {
+
+    opacity: 0;
+    transform: translateY(30px);
+
+  }
+
+  to {
+
+    opacity: 1;
+    transform: translateY(0);
+
+  }
+
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media (max-width: 900px) {
+
+  .hero-content {
+
+    flex-direction: column-reverse;
+
+    text-align: center;
+
+  }
+
+  .hero-text h1 {
+
+    font-size: 2.5rem;
+
+  }
+
+  .tagline {
+
+    margin: auto auto 30px;
+
+  }
+
+  .hero-buttons {
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+  }
+
+  .hero-image img {
+
+    width: 250px;
+    height: 250px;
+
+  }
+
+}
+.hero-image img{
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+/* ==========================
+   DARK MODE
+========================== */
+
+body[data-theme="dark"] .hero-section {
+
+  background: linear-gradient(135deg, #111827, #1f2937);
+
+}
+
+body[data-theme="dark"] .highlight {
+
+  color: #F18F01;
+
+}
+
+body[data-theme="dark"] .tagline {
+
+  color: #e5e7eb;
+
+}
+
+body[data-theme="dark"] .hero-image img {
+
+  border-color: #F18F01;
+
+}

@@ -1,0 +1,200 @@
+/* ==========================
+   PROJECTS SECTION
+========================== */
+
+.projects-section {
+  padding: 80px 5%;
+  background: #f8f9fa;
+}
+
+.projects-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #1B4F72;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.projects-section h2::after {
+  content: "";
+  width: 70px;
+  height: 4px;
+  background: #F18F01;
+  display: block;
+  margin: 15px auto 0;
+  border-radius: 4px;
+}
+
+/* ==========================
+   GRID
+========================== */
+
+.project-grid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+  gap: 30px;
+}
+
+/* ==========================
+   CARD
+========================== */
+
+.project-card {
+  background: white;
+
+  border-radius: 15px;
+
+  overflow: hidden;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+
+  transition: .3s;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+.project-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* ==========================
+   CONTENT
+========================== */
+
+.project-content {
+  padding: 25px;
+}
+
+.project-content h3 {
+  color: #1B4F72;
+  margin-bottom: 12px;
+}
+
+.project-content p {
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+/* ==========================
+   TAGS
+========================== */
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  margin-bottom: 25px;
+}
+
+.tag {
+  background: #1B4F72;
+  color: white;
+
+  padding: 6px 14px;
+
+  border-radius: 30px;
+
+  font-size: .85rem;
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+
+.project-links {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  text-decoration: none;
+
+  padding: 12px 20px;
+
+  border-radius: 8px;
+
+  transition: .3s;
+
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: #F18F01;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #d97706;
+}
+
+.btn-secondary {
+  border: 2px solid #1B4F72;
+  color: #1B4F72;
+}
+
+.btn-secondary:hover {
+  background: #1B4F72;
+  color: white;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media (max-width:768px) {
+
+  .projects-section {
+    padding: 60px 20px;
+  }
+
+  .project-links {
+    flex-direction: column;
+  }
+
+  .btn {
+    text-align: center;
+  }
+}
+
+/* ==========================
+   DARK MODE
+========================== */
+
+body[data-theme="dark"] .projects-section {
+  background: #121212;
+}
+
+body[data-theme="dark"] .projects-section h2 {
+  color: white;
+}
+
+body[data-theme="dark"] .project-card {
+  background: #1f2937;
+}
+
+body[data-theme="dark"] .project-content h3,
+body[data-theme="dark"] .project-content p {
+  color: white;
+}
+
+body[data-theme="dark"] .tag {
+  background: #F18F01;
+}
+
+body[data-theme="dark"] .btn-secondary {
+  border-color: white;
+  color: white;
+}
+
+body[data-theme="dark"] .btn-secondary:hover {
+  background: white;
+  color: #111827;
+}
