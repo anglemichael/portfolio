@@ -120,6 +120,7 @@
   border-radius: 8px;
   transition: .3s;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .btn-primary {
