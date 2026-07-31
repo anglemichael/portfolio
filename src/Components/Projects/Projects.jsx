@@ -1,6 +1,4 @@
 import "./Projects.css";
-import { projects } from "../data/projects";
-
 function Projects() {
   const projects = [
     {
