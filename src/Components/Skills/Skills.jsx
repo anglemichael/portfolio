@@ -7,7 +7,7 @@ function Skills() {
     { name: "JavaScript", level: 80 },
     { name: "React", level: 75 },
     { name: "Node.js", level: 70 },
-    { name: "Git & GitHub", level: 80 },
+    { name: "Python", level: 80 },
   ];
 
   return (
