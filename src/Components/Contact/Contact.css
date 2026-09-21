@@ -93,11 +93,14 @@ textarea {
 
   .contact-section {
     padding: 60px 20px;
+    background: #181818;
   }
+
 
   .contact-section h2 {
     font-size: 2rem;
   }
+
 
 }
 /* ==========================
