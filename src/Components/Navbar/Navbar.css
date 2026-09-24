@@ -19,7 +19,7 @@
 
   padding: 18px 5%;
 
-  background: #1B4F72;
+  background: #f8ebd9;
 }
 
 /* ==========================
@@ -54,7 +54,7 @@
 }
 
 .nav-links a:hover {
-  color: #F18F01;
+  color: #f8ebd9;
 }
 
 /* ==========================
@@ -101,7 +101,7 @@
 
     width: 100%;
 
-    background: #1B4F72;
+    background: #f8ebd9;
 
     flex-direction: column;
 
@@ -136,7 +136,7 @@ body[data-theme="dark"] .nav-links a {
 }
 
 body[data-theme="dark"] .nav-links a:hover {
-  color: orange;
+  color: #f8ebd9;
 }
 
 body[data-theme="dark"] .theme-toggle,

@@ -11,7 +11,7 @@
 .contact-section h2 {
   text-align: center;
   font-size: 2.5rem;
-  color: #1B4F72;
+  color: #A9501C;
   margin-bottom: 50px;
   position: relative;
 }
@@ -20,7 +20,7 @@
   content: "";
   width: 70px;
   height: 4px;
-  background: #F18F01;
+  background: #f8ebd9;
   display: block;
   margin: 15px auto 0;
   border-radius: 4px;
@@ -119,13 +119,13 @@ textarea {
   transition: .3s;
 }
 .button {
-  background: #F18F01;
+  background: #f8ebd9;
   color: white;
 }
 .button:hover {
   background: transparent;
-  border: 2px solid #F18F01;
-  color: #F18F01;
+  border: 2px solid #f8ebd9;
+  color: #f8ebd9;
 }
 
 /* ==========================
@@ -167,6 +167,6 @@ body[data-theme="dark"] .form-group textarea::placeholder {
 
 body[data-theme="dark"] .form-group input:focus,
 body[data-theme="dark"] .form-group textarea:focus {
-  border-color: #F18F01;
+  border-color: #f8ebd9;
   box-shadow: 0 0 0 3px rgba(241, 143, 1, 0.2);
 }

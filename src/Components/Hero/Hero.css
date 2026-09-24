@@ -4,7 +4,7 @@
 
 .hero-section {
   min-height: 90vh;
-  background: linear-gradient(135deg, #1B4F72, #2E86AB);
+  background: linear-gradient(135deg, #A9501C, #9d7660);
 
   display: flex;
   align-items: center;
@@ -43,7 +43,7 @@
 }
 
 .highlight {
-  color: #F18F01;
+  color: #f8ebd9;
 }
 
 .tagline {
@@ -77,24 +77,24 @@
   transition: .3s;
 }
 .btn-primary {
-  background: #F18F01;
+  background: #f8ebd9;
   color: white;
-  border: #F18F01;
+  border: #f8ebd9;
 }
 .btn-primary:hover {
   background: transparent;
-  border: 2px solid #F18F01;
-  color: #F18F01;
+  border: 2px solid #f8ebd9;
+  color: #f8ebd9;
 }
 .btn-secondary {
-  background: #F18F01;
+  background: #f8ebd9;
   color: white;
-  border: #F18F01;
+  border: #f8ebd9;
 }
 .btn-secondary:hover {
   background: transparent;
-  border: 2px solid #F18F01;
-  color: #F18F01;
+  border: 2px solid #f8ebd9;
+  color: #f8ebd9;
 }
 
 
@@ -117,7 +117,7 @@
 
   border-radius: 50%;
 
-  border: 8px solid #F18F01;
+  border: 8px solid #f8ebd9;
 
   box-shadow: 0 15px 40px rgba(0,0,0,.35);
 
@@ -221,7 +221,7 @@ body[data-theme="dark"] .hero-section {
 
 body[data-theme="dark"] .highlight {
 
-  color: #F18F01;
+  color: #f8ebd9;
 
 }
 
@@ -233,6 +233,6 @@ body[data-theme="dark"] .tagline {
 
 body[data-theme="dark"] .hero-image img {
 
-  border-color: #F18F01;
+  border-color: #f8ebd9;
 
 }

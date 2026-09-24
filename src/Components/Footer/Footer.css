@@ -3,7 +3,7 @@
 ========================== */
 
 .site-footer {
-  background: #1B4F72;
+  background: #A9501C;
   color: rgba(255, 255, 255, 0.9);
 
   text-align: center;
@@ -39,7 +39,7 @@
 }
 
 .social-links a:hover {
-  color: #F18F01;
+  color: #f8ebd9;
 }
 
 /* ==========================
@@ -63,7 +63,7 @@
 
 body[data-theme="dark"] .site-footer {
   background: #111827;
-  color: #d1d5db;
+  color: #EDE490;
 }
 
 body[data-theme="dark"] .social-links a {
@@ -71,5 +71,5 @@ body[data-theme="dark"] .social-links a {
 }
 
 body[data-theme="dark"] .social-links a:hover {
-  color: #F18F01;
+  color: #f8ebd9;
 }

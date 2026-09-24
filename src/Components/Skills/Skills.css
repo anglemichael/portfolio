@@ -10,7 +10,7 @@
 .skills-section h2 {
   text-align: center;
   font-size: 2.5rem;
-  color: #1B4F72;
+  color: #A9501C;
   margin-bottom: 50px;
   position: relative;
 }
@@ -20,7 +20,7 @@
   display: block;
   width: 70px;
   height: 4px;
-  background: #F18F01;
+  background: #f8ebd9;
   margin: 15px auto 0;
   border-radius: 4px;
 }
@@ -61,7 +61,7 @@
   justify-content: space-between;
   margin-bottom: 12px;
   font-weight: 600;
-  color: #1B4F72;
+  color: #A9501C;
 }
 
 /* ==========================
@@ -78,7 +78,7 @@
 
 .progress-fill {
   height: 100%;
-  background: #F18F01;
+  background: #f8ebd9;
   border-radius: 50px;
   transition: width 1s ease;
 }
@@ -129,5 +129,5 @@ body[data-theme="dark"] .progress-bar {
 }
 
 body[data-theme="dark"] .progress-fill {
-  background: #F18F01;
+  background: #f8ebd9;
 }
