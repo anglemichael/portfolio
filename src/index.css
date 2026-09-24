@@ -4,10 +4,10 @@
     padding: 0;
 }
 :root{
-    --primary:#1B4F72;
-    --accent:#F18F01;
+    --primary:#A9501C;
+    --accent:#f8ebd9;
     --text:#2C3E50;
-    --light:#F4F6F8;
+    --light:#EDE490;
     --white:#FFFFFF;
     --font-main:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -15,5 +15,5 @@ body{
     font-family:var(--font-main);
     color:var(--text);
     line-height:1.6;
-    background: #FFFFFF;
+    background: #ebddc5;
 }
