@@ -1,0 +1,145 @@
+/* ==========================
+   HEADER
+========================== */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 18px 5%;
+
+  background: #1B4F72;
+}
+
+/* ==========================
+   LOGO
+========================== */
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+}
+
+/* ==========================
+   NAV LINKS
+========================== */
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: .3s;
+}
+
+.nav-links a:hover {
+  color: #F18F01;
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+
+.theme-toggle,
+.menu-toggle {
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.theme-toggle:hover,
+.menu-toggle:hover {
+  transform: scale(1.1);
+}
+
+/* Hide hamburger on desktop */
+
+.menu-toggle {
+  display: none;
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media (max-width:768px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+
+    position: absolute;
+
+    top: 70px;
+    left: 0;
+
+    width: 100%;
+
+    background: #1B4F72;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 25px;
+
+    padding: 25px 0;
+
+    display: none;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+}
+
+/* ==========================
+   DARK MODE
+========================== */
+
+body[data-theme="dark"] .navbar {
+  background: #121212;
+}
+
+body[data-theme="dark"] .logo {
+  color: white;
+}
+
+body[data-theme="dark"] .nav-links a {
+  color: white;
+}
+
+body[data-theme="dark"] .nav-links a:hover {
+  color: orange;
+}
+
+body[data-theme="dark"] .theme-toggle,
+body[data-theme="dark"] .menu-toggle {
+  color: white;
+}
