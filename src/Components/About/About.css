@@ -18,7 +18,7 @@
 
 .about-header h2{
     font-size:2.8rem;
-    color:#A9501C;
+    color:#7e3a12;
     margin-bottom:15px;
     position:relative;
 }
@@ -56,7 +56,7 @@
 }
 
 .about-intro span{
-    color:#1B4F72;
+    color:#f8ebd9;
     font-weight:bold;
 }
 
@@ -92,7 +92,7 @@
 }
 
 .about-card h3{
-    color:#1B4F72;
+    color:#f8ebd9;
     margin-bottom:18px;
     font-size:1.3rem;
 }
